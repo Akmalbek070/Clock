@@ -1,0 +1,28 @@
+body{
+    background: linear-gradient(to right, hsl(251, 100%, 50%),hsl(24,100%, 50%));
+}
+.asosoy.raqam{
+    --rotaton: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transform: rotate(var(--rotaton));
+}
+.mill-soat{
+    z-index: 10;
+    transform: translateX(-50%) rotate((calc(var(--rotaton) * 1deg)));
+}
+.asosoy::after{
+    content:'';
+    position: absolute;
+    background: rgb(6, 229, 6);
+    z-index: 11;
+    width: 15px;
+    height: 15px;
+    top: 49%;
+    left: 50%;
+
+    border-radius: 52%;
+
+}
